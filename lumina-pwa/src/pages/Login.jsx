@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../components/LogoLola";
 import InputIcon from "../components/InputIcon";
 import Button from "../components/Button";
+import { User, Lock } from 'lucide-react';
 
 const Login = () => {
   const [usuario, setUsuario] = useState("");
@@ -27,27 +28,21 @@ const Login = () => {
       </div>
 
       <div className="flex-1 bg-white rounded-t-[32px] px-6 pt-8 pb-6 flex flex-col justify-start -mt-4 z-10 shadow-lg">
-        <h1 className="text-2xl font-bold text-primary text-center tracking-wider mb-8">
-          LOGIN
+        <h1 className="text-2xl font-bold text-primary text-center mb-8">
+          Login
         </h1>
 
         <form onSubmit={handleSumit} className="flex flex-col gap-4">
-          <label for="usuario" class="sr-only">
-            Usuário
-          </label>
           <InputIcon
-            icon=""
+            icon={<User className="w-5 h-5 text-primary"/>}
             type="text"
             placeholder="Digite o nome do seu usuário"
             value={usuario}
             onChange={(e) => setUsuario(e.target.value)}
           ></InputIcon>
 
-          <label for="senha" class="sr-only">
-            Senha
-          </label>
           <InputIcon
-            icon=""
+            icon={<Lock className="w-5 h-5 text-primary"/>}
             type="password"
             placeholder="Digite a sua senha"
             value={senha}
@@ -61,7 +56,7 @@ const Login = () => {
               type="checkbox"
               checked={manterConectado}
               onChange={(e) => setManterConectado(e.target.checked)}
-              className="w-4 h-4 accent-coral rounded-full cursor-pointer"
+              className="w-4 h-4 accent-coral rounded-full"
             />
             <span>Manter-me conectado</span>
           </label>

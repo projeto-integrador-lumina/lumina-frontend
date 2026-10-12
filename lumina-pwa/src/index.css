@@ -9,4 +9,9 @@
       --color-quaternary: #C57BDB; /* cor quartenária roxo */
       --color-quaternary-dark: #8F36A9; /* cor quaternária roxo */
       --color-text-main: #444444; /* cor para texto principal */
+      --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
+
+body {
+  font-family: var(--font-sans);
+}
