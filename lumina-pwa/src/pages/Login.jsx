@@ -14,8 +14,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSumit = (e) => {
-    e.prevetDefault(); //processa em segundo plano o envio das informações
-    console.log({ email, senha, manterConectado });
+    e.preventDefault(); //processa em segundo plano o envio das informações
+    console.log({ usuario, senha, manterConectado });
 
     //redireciona para a página inicial do jogo
     navigate("/home");
