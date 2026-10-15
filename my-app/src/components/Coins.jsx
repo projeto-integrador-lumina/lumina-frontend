@@ -1,5 +1,5 @@
 import React from 'react';
-import Coin from  '../assets/icons/coin.svg';
+import Coin from  '@/assets/icons/coin.svg';
 
 const Coins = () => {
     return (

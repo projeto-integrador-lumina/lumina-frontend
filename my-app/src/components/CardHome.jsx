@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play } from 'lucide-react';
-import avatarPiscando from '../assets/avatar-piscando.svg';
+import avatarPiscando from '@/assets/avatar-piscando.svg';
 
 const CardHome = ({ titulo, bgColor, borderColor, onStart, PlayColor}) => {
     return (
